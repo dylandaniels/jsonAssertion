@@ -1,0 +1,16 @@
+{
+  "name": "jsonAssertion",
+  "version": "0.1.0",
+  "authors": [
+    "Dylan Daniels <dylan.david.daniels@gmail.com>"
+  ],
+  "main": "dist/jsonDiffJasmineMatcher.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

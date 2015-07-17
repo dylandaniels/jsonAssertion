@@ -1,0 +1,16 @@
+{
+  "name": "json-assertion",
+  "version": "0.1.0",
+  "description": "Utility functions compatible with mocha and jasmine to compare large JSON files. Instead of the error message printing two large JSON files, e.g. \"expected Object({...}) to be Object({...})\", you get an easy to read diff-type output.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dylan Daniels <dylan.david.daniels@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-jsbeautifier": "^0.2.10"
+  }
+}
