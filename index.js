@@ -136,7 +136,4 @@ function compareJsonObjects(actual, expected) {
     return result;
 }
 
-var exports = {};
-exports.compareJsonObjects = compareJsonObjects;
-
-return exports;
+module.exports.compareJsonObjects = compareJsonObjects;
