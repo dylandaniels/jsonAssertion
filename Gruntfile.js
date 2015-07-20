@@ -2,7 +2,8 @@ module.exports = function (grunt) {
 	grunt.initConfig({
 
 		config: {
-			output: 'dist/jsonDiffJasmineMatcher.js'
+			bowerOutput: 'dist/jsonDiffJasmineMatcher.js',
+			nodeOutput: 'index.js'
 		},
 		
 		concat: {
@@ -13,14 +14,24 @@ module.exports = function (grunt) {
 					'src/jasmineCustomMatchers.js',
 					'src/footer.js'
 				],
-				dest: '<%= config.output %>',
+				dest: '<%= config.bowerOutput %>',
 				nonull: true
+			},
+			node: {
+				src: [
+					'src/diffHelpers.js',
+					'src/nodeWrapper.js'
+				],
+				dest: '<%= config.nodeOutput %>'
 			}
 		},
 
 		jsbeautifier: {
 			dist: {
-				src: '<%= config.output %>'
+				src: '<%= config.bowerOutput %>'
+			},
+			node: {
+				src: '<%= config.nodeOutput %>'
 			}
 		}
 
