@@ -1,6 +1,6 @@
 {
   "name": "json-assertion",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Utility functions compatible with mocha and jasmine to compare large JSON files. Instead of the error message printing two large JSON files, e.g. \"expected Object({...}) to be Object({...})\", you get an easy to read diff-type output.",
   "main": "index.js",
   "scripts": {
