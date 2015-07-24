@@ -1,3 +1,13 @@
+# Get it
+
+```
+bower install jsonAssertion
+```
+
+```
+npm install json-assertion
+```
+
 # jsonAssertion
 JSON equality assertion made better with diffs. When asserting the equality two JSON objects in a Javascript testing framework such as Jasmine, we end up with error messages like this when the test fails: 
 
@@ -41,6 +51,7 @@ Expected JSON objects to be equal; diff:
 Much simpler! We can clearly see that the difference between the two Objects--we expected the fourth element of the `favoriteColors` to be `purple`, but our code produced `green.`
 
 # Out-of-the-box support for Jasmine
+
 
 
 # Integrating with Mocha
