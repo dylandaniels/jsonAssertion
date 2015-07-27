@@ -1,9 +1,11 @@
 # Get it
 
+Bower:
 ```
 bower install jsonAssertion
 ```
 
+Node.js:
 ```
 npm install json-assertion
 ```
@@ -52,6 +54,11 @@ Much simpler! We can clearly see that the difference between the two Objects--we
 
 # Out-of-the-box support for Jasmine
 
-
-
-# Integrating with Mocha
+In your HTML test file, insert the `dist/jsonDiffJasmineMatcher.js` after your Jasmine dependencies but before your tests, like so:
+```
+<script type="text/javascript" src="jasmine/lib/jasmine-2.3.4/jasmine.js"></script>
+<script type="text/javascript" src="jasmine/lib/jasmine-2.3.4/jasmine-html.js"></script>
+<script type="text/javascript" src="jasmine/lib/jasmine-2.3.4/boot.js"></script>
+<script type="text/javascript" src="dist/jsonDiffJasmineMatcher.js"></script>
+<script type="text/javascript" src="TestSpec.js"></script>
+```
